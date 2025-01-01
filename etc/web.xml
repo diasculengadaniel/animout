@@ -1,0 +1,87 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0"
+	encoding="utf-8">
+	
+	<servlet>
+	
+		<servlet-name>Cadastro</servlet-name>
+		<servlet-class>com.example.web.CadastServlet</servlet-class>
+		
+		<init-param>
+			<param-name>servletVersion</param-name>
+			<param-value>1.0.1</param-value>
+		</init-param>
+		
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Cadastro</servlet-name>
+		<url-pattern>/Cadastrar.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	
+		<servlet-name>Download</servlet-name>
+		<servlet-class>com.example.web.DownServlet</servlet-class>
+		
+		<init-param>
+			<param-name>servletVersion</param-name>
+			<param-value>1.0.0</param-value>
+		</init-param>
+		
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Download</servlet-name>
+		<url-pattern>/Down.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Session</servlet-name>
+		<servlet-class>com.example.web.SessionServlet</servlet-class>
+		
+		<init-param>
+			<param-name>servletVersion</param-name>
+			<param-value>1.0.0</param-value>
+		</init-param>
+		
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Session</servlet-name>
+		<url-pattern>/Session.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InitialPage</servlet-name>
+		<jsp-file>/CadastResp.jsp</jsp-file>
+		
+		<init-param>
+			<param-name>servletVersion</param-name>
+			<param-value>1.0.2</param-value>
+		</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>InitialPage<servlet-name>
+		<url-pattern>/PáginaInicial</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+		<param-name>devEmail</param-name>
+		<param-value>diasculengadaniel908@gmail.com</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>numMaxAnime</param-name>
+		<param-value>5</param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>com.example.web.MyContextListener</listener-class>
+	</listener>
+
+</web-app>

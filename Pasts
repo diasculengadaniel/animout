@@ -1,0 +1,11 @@
+out.print("<!DOCTYPE HTML>"+
+		"<html>"+
+			"<head>"+
+				"<title>EncoNerd's</title>"+
+				"<meta charset='uft-8'>"+
+			"</head>"+
+			"<body>"+
+				"<h1></h1>"
+			"</body>"+
+		"</html>"
+);

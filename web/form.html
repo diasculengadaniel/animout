@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EncoNerd's Cadastro</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		<h1 align="center">Cadastrar-se em <strong>EncoNerd's</strong></h1>
+		
+		<form method="post" action="Cadastrar.do">
+			<center>
+		
+				<label>Nome</label><br>
+				<input type="text" name="name" required="ture"><br>
+			
+				<label>Sobrenome<label><br>
+				<input type="text" name="lastName" required="true"><br>
+				
+				<label>User Name</label><br>
+				<input type="text" name="userName" required="true"><br>
+				
+				<label>Nascimento</label><br>
+				<input type="date" name ="nascimento" required="true"><br>
+				
+				<label>Senha</label><br>
+				<input type="passWord" name="passWord" required="true"><br>
+				
+				<label>Confirmar Senha</label><br>
+				<input type="passWord" name="conPassWord" required="true"><br>
+			
+				<label>Nerd type</label><br>
+				<select name="nerdType" size= "1">
+					<option value="Otaku/Otome">Otaku/Otome</option>
+					<option value="Gamer">Gamer</option>
+					<option value="Geek">Geek</option>
+					<option value="NerdHardLevel">NerdHardLevel<option>
+				</select><br><br>
+			
+				<input type="Submit" value="Cadastrar-se">
+			</center>
+			
+		</form>
+		
+	</body>
+</html>	

@@ -1,0 +1,7 @@
+# Miscellaneous
+*.class
+*.log
+*.bat
+build.bat
+/classes
+
